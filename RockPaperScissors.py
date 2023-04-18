@@ -3,6 +3,7 @@ import random
 userWins = 0
 computerWins = 0
 options = ["rock", "paper", "scissors"]
+# flag variable
 playAgain = True
 
 while playAgain:
@@ -14,7 +15,8 @@ while playAgain:
             print("Computer won", computerWins, "times!")
             print("Thanks for playing!")
         print("Enter ctrl+alt+N if you want to play")
-        playAgain = False
+        # playAgain is set to false so that it comes out of the loop
+        playAgain = False 
     elif userChoice not in options:
         print("Please enter your choice as per the game i.e. Rock/Paper/Scissors")
     else:
